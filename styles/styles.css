@@ -62,6 +62,8 @@ input {
   text-transform: uppercase;
 }
 .site-logo--blue {
+  border-radius: 7px;
+  background-color: #fff;
   color: #7296ee;
 }
 .currency-info:not(:last-child) {
@@ -77,7 +79,7 @@ input {
   display: flex;
   align-items: center;
 }
-.site-header-lists {
+.site-header-lists:not(:last-child) {
   margin-right: 25px;
 }
 .search-wrapper {
@@ -93,6 +95,9 @@ input {
 }
 .search-button, #search {
   border: none;
+}
+.search-button__img {
+  vertical-align: bottom;
 }
 .lang-current {
   width: 70px;
