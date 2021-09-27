@@ -106,25 +106,25 @@ img {
   vertical-align: bottom;
 }
 .lang-current {
+  display: flex;
+  justify-content: space-around;
   width: 70px;
   padding: 3px;
   border-radius: 39px;
   background-color: #dce6ff;
 }
 .lang-current__link {
+  width: 30px;
   display: inline-block;
   border-radius: 50%;
   font-size: 13px;
-  line-height: 15px;
+  line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
   color: #a6a6a6;
-}
-.lang-current__link:first-child {
-  margin-right: 1px;
 }
 .lang-current--active {
   color: #000;
-  padding: 8px 7px 7px;
   background-color: #fff;
 }
 .btn-submit {
@@ -179,11 +179,13 @@ img {
   justify-content: space-between;
   flex-direction: column;
   max-width: 393px;
+  margin-bottom: 10px;
   padding:20px 16px 15px 17px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
 }
 .list-news__title {
   display: inline-block;
-  margin-right: 15px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 20px;
@@ -193,6 +195,7 @@ img {
   line-height: 22px;
   color: #4a4b4c;
   margin-bottom: 15px;
+  flex-grow: 1;
 }
 .list-news__img {
   border-radius: 10px;
@@ -206,8 +209,11 @@ img {
   margin-right: 10px;
   border-radius: 5px;
 }
-.list-news__bottom-desc {
+.list-news__bottom-desc, .list-news__bottom-time {
   font-size: 12px;
   line-height: 14px;
   color: #5e5f61;
+}
+.list-news__bottom-desc {
+  margin-right: 3px;
 }
