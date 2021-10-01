@@ -49,7 +49,7 @@ input {
   outline-offset: 1px;
 }
 img {
-  display: inline-block;
+  display: block;
   object-fit: cover;
 }
 .title-md, .title-lg, .title-sm {
@@ -97,8 +97,6 @@ img {
   align-items: center;
 }
 .site-logo {
-  margin-right: 35px;
-  padding: 9px 6px 8px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -112,6 +110,8 @@ img {
   opacity: 0.6;
 }
 .site-logo--blue {
+  margin-right: 35px;
+  padding: 9px 6px 8px;
   border-radius: 7px;
   background-color: #fff;
   color: #7296ee;
@@ -233,6 +233,7 @@ img {
 }
 .main-content {
   flex-grow: 1;
+  padding-bottom: 100px;
 }
 .news-grid {
   display: flex;
@@ -404,11 +405,89 @@ img {
   color: #5e5f61;
 }
 .sidebar-promo {
-  background-color:red;
 }
 .sidebar-promo__link {
-  display: inline-block;
+
 }
 .sidebar-promo__img {
   border-radius: 15px;
+}
+
+/* SITE-FOOTER  */
+
+.site-footer {
+  padding: 40px 0;
+  background-color: #7297ef;
+}
+.site-logo--white, .site-footer-top__link, .site-footer-top__text {
+  color: #fff;
+}
+.site-footer-container {
+  max-width: 998px;
+  width: 100%;
+  margin: 0 auto;
+}
+.site-footer-top {
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  border-bottom:1px solid #cecece;
+}
+.site-logo--white {
+  margin-bottom: 15px;
+}
+.site-footer-top__col {
+  display: flex;
+}
+.site-footer-top__text {
+  max-width: 229px;
+  margin-right: 203px;
+  font-size: 12px;
+  line-height: 19px;
+}
+.site-footer-top__list {
+  padding: 0;
+}
+.site-footer-top__list:first-of-type {
+  margin-right: 100px;
+}
+.site-footer-top__list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.site-footer-top__link {
+  font-weight: 500;
+  line-height: 19px;
+  transition: opacity .4s ease;
+}
+.site-footer-top__link:hover {
+  opacity:0.6;
+}
+.site-footer-top__link:active {
+  opacity:0.4;
+}
+
+.site-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-sm--white {
+  margin: 0;
+  line-height: 23px;
+  color: #fff;
+}
+.site-footer-bottom__list {
+  padding-left: 0;
+  display: flex;
+}
+.site-footer-bottom__list-item:not(:last-child) {
+  margin-right: 25px;
+}
+.site-footer-bottom__list-item {
+  transition: transform .4s ease;
+}
+.site-footer-bottom__list-item:hover {
+  transform: translateY(-5px);
+}
+.site-footer-bottom__list-item:active {
+  transform: scale(1.5);
 }
