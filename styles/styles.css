@@ -300,7 +300,10 @@ img {
   margin-bottom: 60px;
   padding: 24px 70px 24px 29px;
   border-radius:10px;
-  background-color:#ffd8bb
+  background-image: url(/img/bg-notif.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .notification-cta__title {
   margin: 0;
@@ -320,7 +323,6 @@ img {
 .news-col {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-left: -10px;
 }
 .news-col__row {
@@ -373,6 +375,7 @@ img {
   background-color:#eaeaea;
 }
 .sidebar {
+  padding-top: 48px;
   width: 393px;
 }
 .sidebar__row {
@@ -490,4 +493,19 @@ img {
 }
 .site-footer-bottom__list-item:active {
   transform: scale(1.5);
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .notification-cta {
+    background-image: url(/img/bg-notif@2x.jpg);
+  }
+
 }
