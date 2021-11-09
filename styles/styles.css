@@ -58,6 +58,13 @@ img {
 .title-md, .title-lg, .title-sm {
   font-weight: 500;
   color: #000;
+  transition:color .3s ease;
+}
+.title-transition:hover {
+  color:#7296ee;
+}
+.title-transition:active {
+  color:#517ee6;
 }
 .title-md {
   display: block;
@@ -350,10 +357,6 @@ img {
   display: block;
   border-radius:10px;
 }
-.main-news__content {
-}
-.title-md {
-}
 .main-news__text {
   margin-bottom: 17px;
 }
@@ -376,6 +379,13 @@ img {
   line-height: 19px;
   text-align: center;
   background-color:#eaeaea;
+  transition:background-color .4s ease;
+}
+.show-more:hover {
+  background-color:rgba(0, 0, 0, 0.15);
+}
+.show-more:active {
+  background-color:rgba(0, 0, 0, 0.2);
 }
 .sidebar {
   padding-top: 48px;
