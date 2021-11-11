@@ -448,8 +448,7 @@ img {
   margin-bottom: 20px;
   border-bottom:1px solid #cecece;
 }
-.site-logo--white {
-  display: block;
+.site-footer-top__logo-wrapper {
   margin-bottom: 15px;
 }
 .site-footer-top__col {
