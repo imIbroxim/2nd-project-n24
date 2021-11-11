@@ -78,6 +78,17 @@ img {
 .title-transition:active {
   color:#517ee6;
 }
+.animation-transition  {
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color:#7296ee;
+  border-radius:50px;
+  transition:width .4s ease;
+}
+.our-info__text:hover .animation-transition{
+  width: 25%;
+}
 .title-md {
   margin-top: 0;
   margin-bottom: 10px;
@@ -512,6 +523,9 @@ img {
 }
 
 /* page write-to-us  */
+.section-write-to-us {
+  margin-top: 20px;
+}
 .write-to-us__title {
   margin-bottom: 20px;
 }
@@ -563,6 +577,7 @@ textarea {
   border-radius:10px;
 }
 .our-info-item:not(:last-child) {
+  padding-bottom: 17px;
   border-bottom: 1px solid #d2d2d2;
   margin-bottom: 20px;
 }
