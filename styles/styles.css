@@ -178,15 +178,21 @@ img {
   height: 45px;
   border-radius: 60px;
 }
-.search-button {
+/* .search-button {
   padding-left: 15px;
   background-color: #fff;
 }
+.search-button__img {
+  vertical-align: bottom;
+} */
 .search-button, #search {
   border: none;
 }
-.search-button__img {
-  vertical-align: bottom;
+.search-input {
+  padding-left: 40px;
+  background-image:url(/img/search.svg);
+  background-repeat:no-repeat;
+  background-position:15px center;
 }
 .lang-current {
   display: flex;
